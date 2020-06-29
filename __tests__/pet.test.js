@@ -7,9 +7,7 @@ describe('pet', () => {
 
   beforeEach(function() {
     pet = new Pet("pet");
-    pet.setHunger();
-    pet.setPlay();
-    pet.setSleep();
+    pet.setAttributes();
     pet.death();
   });
 
@@ -70,5 +68,10 @@ describe('pet', () => {
   test('should check to see if play level is equal to 10', () => {
     pet.playLevel = 10;
     expect(pet.play()).toEqual(true);
+  });
+
+  test('should warn user when food level gets low', () => {
+    pet.foodLevel = 5;
+    expect(pet.warn()).toEqual(false);
   });
 });
