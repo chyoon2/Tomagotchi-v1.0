@@ -77,6 +77,8 @@ describe('pet', () => {
 
   test('should decrease sleep level when played with', () => {
     pet.sleepLevel = 6;
-    expect(pet.play()).toEqual(5);
+    pet.playLevel = 9;
+    pet.play();
+    expect(pet.sleepLevel).toEqual(5);
   });
 });
