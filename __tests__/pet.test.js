@@ -33,4 +33,13 @@ describe('pet', () => {
     jest.advanceTimersByTime(15000);
     expect(pet.playLevel).toEqual(9);
   });
+
+  test('should have a sleep level of 10 when created', () => {
+    expect(pet.sleepLevel).toEqual(10);
+  });
+
+  // test('should have a sleep level of 9 after 15000 milliseconds', () => {
+  //   jest.advanceTimersByTime(15000);
+  //   expect(pet.playLevel).toEqual(9);
+  // });
 });
