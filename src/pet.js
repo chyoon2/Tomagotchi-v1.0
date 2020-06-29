@@ -4,6 +4,7 @@ export class Pet {
     this.name = name;
     this.foodLevel = 10;
     this.playLevel = 10;
+    this.sleepLevel = 10;
   }
 
   setHunger() {
