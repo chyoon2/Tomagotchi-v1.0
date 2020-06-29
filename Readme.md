@@ -6,6 +6,56 @@ change file name in Name.js, change testname.js, name in package.json, webpack/h
 
 ## Description
 
+
+## Specs:
+
+Behavior: Create a pet!
+input: "Name your pet: Johnny"
+output: "Here's Johnny!"
+
+Behavior: Program will set a hunger level and increase it (300,000ms)
+input: N/A
+output: N/A
+
+Behavior: Program will set a sleep level and increase it (300,000ms)
+input: N/A
+output: N/A
+
+Behavior: Program will set a play level and increase it (300,000ms)
+input: N/A
+output: N/A
+
+Behavior: Program will decrease hunger levels when pet is fed.
+input: "Feed Johnny"
+output: "Yum Yum"
+
+Behavior: Program will decrease sleep levels when pet is put to sleep.
+input: "Put Johnny to bed"
+output: "Goodnight"
+
+Behavior: Program will decrease play levels when pet is played with.
+input: "Play with Johnny"
+output: "That sure was fun"
+
+Behavior: Program will increase sleep levels when pet is played with (play levels are increased).
+input: "Play with Johnny"
+output: N/A  **Sleep levels increase"
+
+
+
+
+-create a game object (constructor) -players 
+
+creature 
+-food
+-play
+-sleeplevels
+
+setinterval function
+
+function playwith: increases food/attention/sleep
+
+
 ## Setup/Installation Requirements 
 
 ### Via GitHub Download
