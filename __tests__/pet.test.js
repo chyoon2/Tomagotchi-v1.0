@@ -38,8 +38,8 @@ describe('pet', () => {
     expect(pet.sleepLevel).toEqual(10);
   });
 
-  // test('should have a sleep level of 9 after 15000 milliseconds', () => {
-  //   jest.advanceTimersByTime(15000);
-  //   expect(pet.playLevel).toEqual(9);
-  // });
+  test('should have a sleep level of 9 after 600001 milliseconds', () => {
+    jest.advanceTimersByTime(600001);
+    expect(pet.sleepLevel).toEqual(9);
+  });
 });
