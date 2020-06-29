@@ -43,4 +43,9 @@ describe('pet', () => {
     jest.advanceTimersByTime(600001);
     expect(pet.sleepLevel).toEqual(9);
   });
+  
+  test('should the hunger reach 0, pet will die', () => {
+    pet.foodLevel = 0;
+    expect(pet.death()).toEqual(true);
+  });
 });

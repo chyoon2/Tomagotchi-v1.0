@@ -11,7 +11,8 @@ export class Pet {
     setInterval(() => {
       this.foodLevel--;
     }, 300000);
-  }
+  
+}
 
   setPlay() {
     setInterval(() => {

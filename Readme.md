@@ -37,7 +37,11 @@ Behavior: Program will decrease play levels when pet is played with.
 input: "Play with Johnny"
 output: "That sure was fun"
 
-Behavior: Program will increase sleep levels when pet is played with (play levels are increased).
+Behavior: Program will starve pet if hunger reaches 0. 
+input: N/A
+output: "Johnny has starved to death"
+
+Behavior: Program will decrease sleep levels when pet is played with (play levels are increased).
 input: "Play with Johnny"
 output: N/A  **Sleep levels increase"
 
