@@ -23,4 +23,8 @@ describe('pet', () => {
     jest.advanceTimersByTime(300001);
     expect(pet.foodLevel).toEqual(9);
   });
+
+  test('should have a play level of 10 when created', () => {
+    expect(pet.playLevel).toEqual(10);
+  });
 });
