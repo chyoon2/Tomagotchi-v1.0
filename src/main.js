@@ -27,6 +27,7 @@ $(document).ready(function(){
 
     $("button#feedbtn").click(function() {
       pet.feed();
+      displayStat(pet);
     });
 
     $("button#sleepbtn").click(function() {

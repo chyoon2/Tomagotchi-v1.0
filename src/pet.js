@@ -24,11 +24,11 @@ export class Pet {
   // }
 
   feed() {
-    if ( this.foodLevel === 10){
-      return true;
-    } else {
+    // if ( this.foodLevel === 10){
+    //   return true;
+    // } else {
       this.foodLevel++;
-    }
+    // }
   }
 
   sleep() {

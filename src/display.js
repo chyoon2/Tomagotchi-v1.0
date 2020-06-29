@@ -8,30 +8,30 @@ export function displayStat (pet) {
   setInterval(() => {
     food--;
     $('.food').text(food);
-  }, 1000);
+  }, 2000);
 
   setInterval(() => {
     play--;
     $('.play').text(play);
-  }, 1000);
+  }, 2000);
 
   setInterval(() => {      
     sleep--;
     $('.sleep').text(sleep);
-  }, 1000);
+  }, 2000);
 
-  setInterval(() => {
+  // setInterval(() => {
     
-    if (food === 0) {
-      return alert("Ya Ded");
-    }
-    if (sleep === 0) {
-      return alert("Ya Ded");
-    }
-    if (play === 0) {
-      return alert("Ya Ded");
-    }
-  }, 1000);
+  //   if (food === 0) {
+  //     return alert("Ya Ded");
+  //   }
+  //   if (sleep === 0) {
+  //     return alert("Ya Ded");
+  //   }
+  //   if (play === 0) {
+  //     return alert("Ya Ded");
+  //   }
+  // }, 1000);
 }
 
 // warn() {
