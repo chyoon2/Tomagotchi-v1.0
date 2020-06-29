@@ -9,6 +9,7 @@ describe('pet', () => {
     pet = new Pet("pet");
     pet.setHunger();
     pet.setPlay();
+    pet.setSleep();
   });
 
   afterEach(function() {

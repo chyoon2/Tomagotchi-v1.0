@@ -18,4 +18,10 @@ export class Pet {
       this.playLevel--;
     }, 15000);
   }
+
+  setSleep() {
+    setInterval(() => {
+      this.sleepLevel--;
+    }, 600000);
+  }
 }
