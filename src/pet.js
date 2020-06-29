@@ -7,21 +7,13 @@ export class Pet {
     this.sleepLevel = 10;
   }
 
-  setHunger() {
+  setAttributes() {
     setInterval(() => {
       this.foodLevel--;
     }, 300000);
-    this.death();
-  }
-
-  setPlay() {
     setInterval(() => {
       this.playLevel--;
     }, 15000);
-    this.death();
-  }
-
-  setSleep() {
     setInterval(() => {
       this.sleepLevel--;
     }, 600000);
@@ -65,6 +57,19 @@ export class Pet {
       this.playLevel++;
       return this.playLevel;
     }
+  }
+
+  warn() {
+    if (this.foodLevel === 5) {
+      return true;
+    }
+    if (this.sleepLevel === 5) {
+      return true;
+    }
+    if (this.playLevel === 5) {
+      return true;
+    }
+    return false;
   }
 
 }

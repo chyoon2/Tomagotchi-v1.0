@@ -72,6 +72,6 @@ describe('pet', () => {
 
   test('should warn user when food level gets low', () => {
     pet.foodLevel = 5;
-    expect(pet.warn()).toEqual(false);
+    expect(pet.warn()).toEqual(true);
   });
 });
