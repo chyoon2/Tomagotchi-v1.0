@@ -6,7 +6,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 module.exports = {
   entry: './src/main.js',
   output: {
-    filename:'bundle.js',
+    filename:'index.js',
     path: path.resolve(__dirname, 'dist')
   },
   devtool: 'eval-source-map',
@@ -17,7 +17,7 @@ module.exports = {
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'pandemic',
+      title: 'pet',
       template: './src/index.html',
       inject: 'body'
     })

@@ -7,34 +7,21 @@ export class Pet {
     this.sleepLevel = 10;
   }
 
-  setAttributes() {
-    setInterval(() => {
-      this.foodLevel--;
-    }, 300000);
-    setInterval(() => {
-      this.playLevel--;
-    }, 15000);
-    setInterval(() => {
-      this.sleepLevel--;
-    }, 600000);
-    setInterval(() => {
-      this.warn();
-      this.death();
-    }, 15000);
-  }
-
-  death() {
-    if (this.foodLevel === 0) {
-      return true;
-    }
-    if (this.sleepLevel === 0) {
-      return true;
-    }
-    if (this.playLevel === 0) {
-      return true;
-    }
-    return false;
-  }
+  // setAttributes() {
+  //   setInterval(() => {
+  //     this.foodLevel--;
+  //   }, 300000);
+  //   setInterval(() => {
+  //     this.playLevel--;
+  //   }, 15000);
+  //   setInterval(() => {      
+  //     this.sleepLevel--;
+  //   }, 600000);
+  //   setInterval(() => {
+  //     this.warn();
+  //     this.death();
+  //   }, 15000);
+  // }
 
   feed() {
     if ( this.foodLevel === 10){
@@ -60,17 +47,5 @@ export class Pet {
     }
   }
 
-  warn() {
-    if (this.foodLevel <= 5) {
-      return 1;
-    }
-    if (this.sleepLevel <= 5) {
-      return 2;
-    }
-    if (this.playLevel <= 5) {
-      return 3;
-    }
-    return false;
-  }
 }
 

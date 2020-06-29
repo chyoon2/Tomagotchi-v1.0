@@ -2,21 +2,28 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import $ from 'jquery';
-import { Pet } from './../src/pet.js';
+import { Pet } from './pet.js';
+import { displayStat } from './display.js';
 
 
 $(document).ready(function(){
-
-
   $("form#form-one").submit(function(event) {
     event.preventDefault();
     let petName = $("input#name").val();
     let pet = new Pet(petName);
-    pet.setAttributes();
-    $("#submitbtn").hide();
-    $("button#feedbtn").show();
-    $("button#sleepbtn").show();
-    $("button#playbtn").show();
+    // pet.setAttributes();
+
+    $("#form-one").hide();
+    $("#feedbtn").show();
+    $("#sleepbtn").show();
+    $("#playbtn").show();
+
+    $('.food').text(pet.foodLevel);
+    $('.play').text(pet.playLevel);
+    $('.sleep').text(pet.sleepLevel);
+    $('#stats').show();
+
+    displayStat(pet);
 
     $("button#feedbtn").click(function() {
       pet.feed();
@@ -29,19 +36,5 @@ $(document).ready(function(){
     $("button#playbtn").click(function() {
       pet.play();
     });
-    
-    if (pet.death()) {
-      //something happend
-    }
-
-    if (pet.warn === 1) {
-      alert("food low!");
-    } else if (pet.warn === 2){
-      alert("sleep low!");
-    }else if (pet.warn === 3){
-      alert("play low!");
-    }
-
-
   });
 });
