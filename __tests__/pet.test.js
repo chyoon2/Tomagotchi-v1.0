@@ -10,6 +10,7 @@ describe('pet', () => {
     pet.setHunger();
     pet.setPlay();
     pet.setSleep();
+    pet.death();
   });
 
   afterEach(function() {
@@ -44,8 +45,14 @@ describe('pet', () => {
     expect(pet.sleepLevel).toEqual(9);
   });
   
-  test('should the hunger reach 0, pet will die', () => {
+  test('should any stat reach 0, pet will die', () => {
     pet.foodLevel = 0;
+    pet.sleepLevel = 0;
+    pet.playLevel = 0;
     expect(pet.death()).toEqual(true);
   });
+
+  test('should increase food pet.foodlevel when fed')
+  pet.foodLevel = 4;
+  expect(pet.feed).toEqual(5);
 });
