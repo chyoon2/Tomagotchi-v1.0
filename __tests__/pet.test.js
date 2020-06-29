@@ -27,4 +27,9 @@ describe('pet', () => {
   test('should have a play level of 10 when created', () => {
     expect(pet.playLevel).toEqual(10);
   });
+
+  test('should have a play level of 9 after 15000 milliseconds', () => {
+    jest.advanceTimersByTime(15000);
+    expect(pet.playLevel).toEqual(9);
+  });
 });
