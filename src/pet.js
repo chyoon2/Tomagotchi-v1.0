@@ -11,8 +11,10 @@ export class Pet {
     setInterval(() => {
       this.foodLevel--;
     }, 300000);
-  
-}
+    if (this.foodLevel === 0) {
+      death();
+    }
+  }
 
   setPlay() {
     setInterval(() => {
@@ -24,5 +26,9 @@ export class Pet {
     setInterval(() => {
       this.sleepLevel--;
     }, 600000);
+  }
+
+  death() {
+    return true;
   }
 }
