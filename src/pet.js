@@ -11,4 +11,10 @@ export class Pet {
       this.foodLevel--;
     }, 300000);
   }
+
+  setPlay() {
+    setInterval(() => {
+      this.playLevel--;
+    }, 15000);
+  }
 }

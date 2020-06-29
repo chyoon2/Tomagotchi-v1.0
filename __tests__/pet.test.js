@@ -8,6 +8,7 @@ describe('pet', () => {
   beforeEach(function() {
     pet = new Pet("pet");
     pet.setHunger();
+    pet.setPlay();
   });
 
   afterEach(function() {
