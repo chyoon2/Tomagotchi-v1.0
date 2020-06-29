@@ -25,7 +25,7 @@ Behavior: Program will set a play level and decrease it by 1 every (15,000ms)
 input: N/A
 output: N/A
 
-
+---
 
 Behavior: Program will increase food levels when pet is fed.
 input: "Feed Johnny"
@@ -39,17 +39,21 @@ Behavior: Program will increase play levels when pet is played with.
 input: "Play with Johnny"
 output: "That sure was fun"
 
-Behavior: Program will starve pet if hunger reaches 0. 
+---
+
+Behavior: The pet object will starve pet if hunger reaches 0. 
 input: N/A
 output: "Johnny has starved to death"
 
-Behavior: Program will die  if play reach 0. 
+Behavior: The pet object will die if play reach 0. 
 input: N/A
 output: "Johnny has died of lonliness"
 
-Behavior: Program will die pet if sleep reaches 0. 
+Behavior: The pet object die pet if sleep reaches 0. 
 input: N/A
 output: "Johnny has died of exhaustion"
+
+---
 
 Behavior: Program will decrease sleep levels when pet is played with (play levels are increased).
 input: "Play with Johnny"
