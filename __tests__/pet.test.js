@@ -1,6 +1,5 @@
 import { Pet } from './../src/pet.js';
 
-
 describe('pet', () => {
   jest.useFakeTimers();
   let pet;

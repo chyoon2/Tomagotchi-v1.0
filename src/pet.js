@@ -41,7 +41,6 @@ export class Pet {
       return true;
     } else {
       this.foodLevel++;
-      return this.foodLevel;
     }
   }
 
@@ -50,7 +49,6 @@ export class Pet {
       return true;
     } else {
       this.sleepLevel++;
-      return this.sleepLevel;
     }
   }
   play() {
@@ -64,16 +62,15 @@ export class Pet {
 
   warn() {
     if (this.foodLevel <= 5) {
-      return true;
+      return 1;
     }
     if (this.sleepLevel <= 5) {
-      return true;
+      return 2;
     }
     if (this.playLevel <= 5) {
-      return true;
+      return 3;
     }
     return false;
   }
-
 }
 
