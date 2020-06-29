@@ -1,7 +1,7 @@
 {
-  "name": "pandemic",
+  "name": "pet",
   "version": "1.0.0",
-  "description": "program pandemic",
+  "description": "program pet",
   "main": "webpack.config.js",
   "scripts": {
     "build": "webpack --mode development",
