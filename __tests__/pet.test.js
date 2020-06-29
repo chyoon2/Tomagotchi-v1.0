@@ -52,7 +52,8 @@ describe('pet', () => {
     expect(pet.death()).toEqual(true);
   });
 
-  test('should increase food pet.foodlevel when fed')
-  pet.foodLevel = 4;
-  expect(pet.feed).toEqual(5);
+  test('should increase food pet.foodlevel when fed', () => {
+    pet.foodLevel = 4;
+    expect(pet.feed()).toEqual(5);
+  });
 });

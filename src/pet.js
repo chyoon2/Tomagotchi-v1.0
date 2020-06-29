@@ -11,24 +11,39 @@ export class Pet {
     setInterval(() => {
       this.foodLevel--;
     }, 300000);
-    if (this.foodLevel === 0) {
-      death();
-    }
+    this.death();
   }
 
   setPlay() {
     setInterval(() => {
       this.playLevel--;
     }, 15000);
+    this.death();
   }
 
   setSleep() {
     setInterval(() => {
       this.sleepLevel--;
     }, 600000);
+    this.death();
   }
 
   death() {
-    return true;
+    if (this.foodLevel === 0) {
+      return true;
+    }
+    if (this.sleepLevel === 0) {
+      return true;
+    }
+    if (this.playLevel === 0) {
+      return true;
+    }
+    return false;
+  }
+
+  feed() {
+    this.foodLevel++;
+    console.log(this.foodLevel);
+    return this.foodLevel;
   }
 }
