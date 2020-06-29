@@ -19,8 +19,8 @@ describe('pet', () => {
     expect(pet.foodLevel).toEqual(10);
   });
 
-//   test('should have a food level of 7 after 3001 milliseconds', () => {
-//     jest.advanceTimersByTime(3001);
-//     expect(pet.foodLevel).toEqual(7);
-//   });
+  test('should have a food level of 9 after 300001 milliseconds', () => {
+    jest.advanceTimersByTime(300001);
+    expect(pet.foodLevel).toEqual(7);
+  });
 });
