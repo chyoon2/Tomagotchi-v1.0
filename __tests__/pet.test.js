@@ -15,8 +15,8 @@ describe('pet', () => {
   });
 
   test('should have a name and a food level of 10 when it is created', () => {
-    expect(pet.name).toEqual("pet1");
-    expect(pet.foodLevel).toEqual(5);
+    expect(pet.name).toEqual("pet");
+    expect(pet.foodLevel).toEqual(10);
   });
 
 //   test('should have a food level of 7 after 3001 milliseconds', () => {
