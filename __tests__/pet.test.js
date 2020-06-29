@@ -56,4 +56,11 @@ describe('pet', () => {
     pet.foodLevel = 4;
     expect(pet.feed()).toEqual(5);
   });
+
+  test('should check to see if food level is equal to 10', () => {
+    pet.foodLevel = 10;
+    expect(pet.feed()).toEqual(6);
+  });
+
+
 });
