@@ -42,8 +42,29 @@ export class Pet {
   }
 
   feed() {
-    this.foodLevel++;
-    console.log(this.foodLevel);
-    return this.foodLevel;
+    if ( this.foodLevel === 10){
+      return true;
+    } else {
+      this.foodLevel++;
+      return this.foodLevel;
+    }
   }
+
+  sleep() {
+    if ( this.sleepLevel === 10){
+      return true;
+    } else {
+      this.sleepLevel++;
+      return this.sleepLevel;
+    }
+  }
+  play() {
+    if ( this.playLevel === 10){
+      return true;
+    } else {
+      this.playLevel++;
+      return this.playLevel;
+    }
+  }
+
 }

@@ -41,6 +41,14 @@ Behavior: Program will starve pet if hunger reaches 0.
 input: N/A
 output: "Johnny has starved to death"
 
+Behavior: Program will die  if play reach 0. 
+input: N/A
+output: "Johnny has died of lonliness"
+
+Behavior: Program will die pet if sleep reaches 0. 
+input: N/A
+output: "Johnny has died of exhaustion"
+
 Behavior: Program will decrease sleep levels when pet is played with (play levels are increased).
 input: "Play with Johnny"
 output: N/A  **Sleep levels increase"

@@ -59,16 +59,16 @@ describe('pet', () => {
 
   test('should check to see if food level is equal to 10', () => {
     pet.foodLevel = 10;
-    expect(pet.feed()).toEqual(false);
+    expect(pet.feed()).toEqual(true);
   });
 
   test('should check to see if sleep level is equal to 10', () => {
     pet.sleepLevel = 10;
-    expect(pet.sleep()).toEqual(false);
+    expect(pet.sleep()).toEqual(true);
   });
   
   test('should check to see if play level is equal to 10', () => {
     pet.playLevel = 10;
-    expect(pet.play()).toEqual(false);
+    expect(pet.play()).toEqual(true);
   });
 });
