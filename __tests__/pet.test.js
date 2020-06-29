@@ -70,8 +70,13 @@ describe('pet', () => {
     expect(pet.play()).toEqual(true);
   });
 
-  test('should warn user when food level gets low', () => {
+  test('should warn user when attribute gets low', () => {
     pet.foodLevel = 5;
     expect(pet.warn()).toEqual(true);
+  });
+
+  test('should decrease sleep level when played with', () => {
+    pet.sleepLevel = 6;
+    expect(pet.play()).toEqual(5);
   });
 });
